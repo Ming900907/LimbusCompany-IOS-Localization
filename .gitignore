@@ -218,6 +218,6 @@ LLC_zh-CN*/
 BattleSpeechBubbles/
 tools/
 LocalizeTemp_jp/
-!manifest.json
-!localize_*.zip
+manifest.json
+localize_*.zip
 .html
