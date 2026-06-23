@@ -42,11 +42,26 @@
 
 [另一份教程 （Shadowrocket）](https://github.com/LOWERTOP/Shadowrocket#https%E8%A7%A3%E5%AF%86)  
   
-其他代理工具请参考各自工具的使用方法  
+其他代理工具请参考各自工具的使用方法 **安装证书并开启Mitm**  
 
 ---
 ### 代理软件配置
    
+
+**根据使用的软件，通过下方链接一键导入**
+- [Shadowrocket 模块](https://broken-forest-6530.ghcruise.workers.dev/shadowrocket)  
+
+- [Stash 覆写](https://broken-forest-6530.ghcruise.workers.dev/stash)
+
+  > ~~由于作者没有这些代理工具，所以以下链接未经测试~~   
+  > 如果无法使用，请在issue中提出或协助改进 
+- [Surge 模块](https://broken-forest-6530.ghcruise.workers.dev/surge) 
+
+- [Egern 模块](https://broken-forest-6530.ghcruise.workers.dev/egern)
+
+- [Loon 插件](https://broken-forest-6530.ghcruise.workers.dev/loon)
+
+
 **如果你安装了 [Script-Hub 模块](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%AE%89%E8%A3%85)，则可以点击下方链接一键导入**   
 - [Shadowrocket 模块](https://api.boxjs.app/shadowrocket/install?module=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dshadowrocket-module%26del%3Dtrue%26jqEnabled%3Dtrue)  
   
@@ -58,14 +73,6 @@
     
 
 
-**如果你没有安装Script-Hub模块，建议你安装一个。如果实在不想安装，请看下文**
-- [Shadowrocket 模块](https://raw.githubusercontent.com/ghcruise/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.module)  
-复制上方链接，导入Shadowrocket模块中并启用 ([如何导入模块](https://github.com/LOWERTOP/Shadowrocket#%E6%A8%A1%E5%9D%97))  
-- Surge & Loon & Quantumult X & 其他  
-~~由于作者没有这些代理工具，所以也不会有这部分的内容~~  
-   
-
-
 ---
 ### 启动游戏
 确认
@@ -73,8 +80,8 @@
 - 启用上述配置  
 
 资源下载
-- **首次进入游戏会提示下载约20Mb资源文件则说明汉化成功**  
-- **导入模块后汉化会随本项目自动更新，无需任何手动操作，每次更新显示约4~5Mb，实际仍会下载约20Mb资源文件**
+- **首次进入游戏会提示下载约26Mb资源文件则说明汉化成功**  
+- **导入模块后汉化会随本项目自动更新，无需任何手动操作**
 
 ## 最后
 - 如果你觉得本项目对你有帮助，请帮忙点个 Star，这是对我最好的支持！
