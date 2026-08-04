@@ -49,17 +49,17 @@
    
 
 **根据使用的软件，通过下方链接一键导入**
-- [Shadowrocket 模块](https://broken-forest-6530.ghcruise.workers.dev/shadowrocket)  
+- [Shadowrocket 模块](https://proxy-module.voidfissure.de/shadowrocket)  
 
-- [Stash 覆写](https://broken-forest-6530.ghcruise.workers.dev/stash)
+- [Stash 覆写](https://proxy-module.voidfissure.de/stash)
 
   > ~~由于作者没有这些代理工具，所以以下链接未经测试~~   
   > 如果无法使用，请在issue中提出或协助改进 
-- [Surge 模块](https://broken-forest-6530.ghcruise.workers.dev/surge) 
+- [Surge 模块](https://proxy-module.voidfissure.de/surge) 
 
-- [Egern 模块](https://broken-forest-6530.ghcruise.workers.dev/egern)
+- [Egern 模块](https://proxy-module.voidfissure.de/egern)
 
-- [Loon 插件](https://broken-forest-6530.ghcruise.workers.dev/loon)
+- [Loon 插件](https://proxy-module.voidfissure.de/loon)
 
 
 **如果你安装了 [Script-Hub 模块](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%AE%89%E8%A3%85)，则可以点击下方链接一键导入**   
