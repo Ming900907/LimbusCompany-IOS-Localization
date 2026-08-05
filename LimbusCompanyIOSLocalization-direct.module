@@ -1,13 +1,25 @@
 #!name=[直连/无节点可用]LimbusCompany IOS Localization
-#!desc=[不保证可用性]边狱巴士ios汉化模块 by ghcruise
+#!desc=[不保证高可用性]边狱巴士ios汉化模块 by ghcruise
+#!arguments=api_cdn_ip:13.33.183.110,github-proxy:limbuscompany-ios.voidfissure.de
+#!arguments-desc=api_cdn_ip:Amazon Cloudfront优选IP\ngithub-proxy:github加速镜像
 
+[Host]
+*.googleapis.com = 172.98.12.23
+*.limbuscompanyapi.com = {{{api_cdn_ip}}}
 
-
+[Rule]
+IP-CIDR,172.98.12.23/32,DIRECT
+IP-CIDR,{{{api_cdn_ip}}}/32,DIRECT
+DOMAIN-SUFFIX,googleapis.com,DIRECT
+DOMAIN-SUFFIX,limbuscompanyapi.com,DIRECT
+DOMAIN-SUFFIX,unity3d.com,DIRECT
+DOMAIN-SUFFIX,limbuscompanycdn.org,DIRECT
+DOMAIN-SUFFIX,{{{github-proxy}}},DIRECT
 
 [URL Rewrite]
-^https?://.*localize_jp.zip$ https://gh-proxy.com/github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest/download/localize_jp.zip 302
+^https?://.*localize_jp.zip$ https://{{{github-proxy}}}/github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest/download/localize_jp.zip 302
 
-^https://downloadcommon\.limbuscompanycdn\.org/.*LocalizePatchInfo\.json$ https://gh-proxy.com/github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest/download/manifest.json 302
+^https://downloadcommon\.limbuscompanycdn\.org/.*LocalizePatchInfo\.json$ https://{{{github-proxy}}}/github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest/download/manifest.json 302
 
 [MITM]
 hostname = *.limbuscompanycdn.org
