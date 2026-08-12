@@ -17,7 +17,7 @@ DOMAIN-SUFFIX,limbuscompanycdn.org,DIRECT
 DOMAIN-SUFFIX,{{{github-proxy}}},DIRECT
 
 [URL Rewrite]
-^https?://.*localize_en.zip$ https://{{{github-proxy}}}/https://github.com/Ming900907/LimbusCompany-IOS-Localization/releases/latest/download/localize_en.zip 302
+^https?://.*localize_jp.zip$ https://{{{github-proxy}}}/https://github.com/Ming900907/LimbusCompany-IOS-Localization/releases/latest/download/localize_jp.zip 302
 
 ^https://downloadcommon\.limbuscompanycdn\.org/.*LocalizePatchInfo\.json$ https://{{{github-proxy}}}/https://github.com/Ming900907/LimbusCompany-IOS-Localization/releases/latest/download/manifest.json 302
 

@@ -23,7 +23,8 @@
 - 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
 - 关键词彩色高亮
 - 剧情故事中的人物名和称号**完全汉化**
-- 本项目将中文资源覆盖到游戏内**英语**语言槽位，因此需要在游戏中选择**英语**。尚未汉化的文本会保留为英文，不再显示日文
+- 本项目将中文资源覆盖到游戏内**日语**语言槽位，因此需要在游戏中选择**日语**，以使用游戏内置的 CJK 字体并避免中文显示为方块
+- 尚未汉化且存在英语对应项的文本会使用英文兜底；只有缺少英语对应项的少量资源会保留日文
 - 由于IOS客户端字库限制，本项目在尽可能保留原意的前提下对汉化资源中的部分简体文本进行了替换  
 
 
@@ -71,13 +72,13 @@
 - **导入模块后汉化会随本项目自动更新，无需任何手动操作**
 
 ## 维护与发布
-将现有日语槽位的中文包迁移到英语槽位：
+以原项目日语包为基础，用零协会仓库中的英语资源补齐尚未汉化的文件：
 
 ```bash
-python3 tools/migrate_to_english.py localize_jp.zip manifest.json
+python3 tools/build_japanese_package.py localize_jp.zip manifest.json /path/to/LocalizeLimbusCompany
 ```
 
-把生成的 `dist/localize_en.zip` 和 `dist/manifest.json` 上传到同一个 Release。脚本只迁移清单中真实存在的英语文件；没有英语对应项的文件会跳过并计数。
+把生成的 `dist/localize_jp.zip` 和 `dist/manifest.json` 上传到同一个 Release。脚本会保留已有中文，使用英文替换零协会尚未提供中文的资源，并优化登录按钮和 Tips 标题。
 
 ## 最后
 - 如果你觉得本项目对你有帮助，请帮忙点个 Star，这是对我最好的支持！
