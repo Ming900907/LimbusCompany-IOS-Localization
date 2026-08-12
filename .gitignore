@@ -218,6 +218,10 @@ LLC_zh-CN*/
 BattleSpeechBubbles/
 tools/
 LocalizeTemp_jp/
+LocalizeTemp_en/
 manifest.json
 localize_*.zip
 .html
+
+!tools/
+!tools/migrate_to_english.py

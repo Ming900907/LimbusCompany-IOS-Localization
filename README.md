@@ -3,14 +3,14 @@
   边狱公司 IOS客户端 中文本地化
 </p>
 <p align="center">
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest><img src="https://img.shields.io/github/v/release/ghcruise/LimbusCompany-IOS-Localization?label=Version&style=for-the-badge" /></a>
+  <a href=https://github.com/Ming900907/LimbusCompany-IOS-Localization/releases/latest><img src="https://img.shields.io/github/v/release/Ming900907/LimbusCompany-IOS-Localization?label=Version&style=for-the-badge" /></a>
   <a href=https://creativecommons.org/licenses/by-nc-sa/4.0><img src="https://img.shields.io/badge/Licence-CC_BY--NC--SA_4.0-blue?style=for-the-badge" /></a>
   <a href="https://t.me/+EqcZfY8aKAo1ZWE1"><img src="https://img.shields.io/badge/Telegram-group-blue?style=for-the-badge&logo=telegram&logoColor=white" /></a>
 </p>
 <p align="center">
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.json&label=Game%20Launches&logo=github&color=D4AF37&style=for-the-badge&cacheSeconds=60" /></a>
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.zip&label=Installs&logo=github&color=C0C0C0&style=for-the-badge&cacheSeconds=60" /></a>
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/github/stars/ghcruise/LimbusCompany-IOS-Localization?label=Stars&logo=github&color=CD7F32&style=for-the-badge" /></a>
+  <a href=https://github.com/Ming900907/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.json&label=Game%20Launches&logo=github&color=D4AF37&style=for-the-badge&cacheSeconds=60" /></a>
+  <a href=https://github.com/Ming900907/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.zip&label=Installs&logo=github&color=C0C0C0&style=for-the-badge&cacheSeconds=60" /></a>
+  <a href=https://github.com/Ming900907/LimbusCompany-IOS-Localization><img src="https://img.shields.io/github/stars/Ming900907/LimbusCompany-IOS-Localization?label=Stars&logo=github&color=CD7F32&style=for-the-badge" /></a>
 </p>
 
 本文将介绍一种《边狱公司》（Limbus Company）iOS 的客户端汉化方案。   
@@ -23,7 +23,7 @@
 - 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
 - 关键词彩色高亮
 - 剧情故事中的人物名和称号**完全汉化**
-- 本项目实现的是对游戏内**日语**替换，因此选择**日语**才可以看到汉化效果。同样地，可以参考下文 [详细原理](#原理简介) 实现对韩语或英语的替换，同样可以达到本项目的效果
+- 本项目将中文资源覆盖到游戏内**英语**语言槽位，因此需要在游戏中选择**英语**。尚未汉化的文本会保留为英文，不再显示日文
 - 由于IOS客户端字库限制，本项目在尽可能保留原意的前提下对汉化资源中的部分简体文本进行了替换  
 
 
@@ -46,31 +46,17 @@
 
 ---
 ### 代理软件配置
-**如果您在中国大陆地区且无节点，可以通过该链接导入直连模块，现阶段仅支持Shadowrocket**
-- [Shadowrocket 直连+反代+IP优选](https://proxy-module.voidfissure.de/shadowrocket-direct)  
+安装 [Script-Hub 模块](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%AE%89%E8%A3%85) 后，可点击下方链接导入：
 
-**根据使用的软件，通过下方链接一键导入**
-- [Shadowrocket 模块](https://proxy-module.voidfissure.de/shadowrocket)  
+- [Shadowrocket 直连+反代+IP优选](https://api.boxjs.app/shadowrocket/install?module=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FMing900907%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization-direct.module%2F_end_%2FLimbusCompanyIOSLocalization-direct.sgmodule%3Ftype%3Dsurge-module%26target%3Dshadowrocket-module%26del%3Dtrue%26jqEnabled%3Dtrue)
 
-- [Stash 覆写](https://proxy-module.voidfissure.de/stash)
-
-  > ~~由于作者没有这些代理工具，所以以下链接未经测试~~   
-  > 如果无法使用，请在issue中提出或协助改进 
-- [Surge 模块](https://proxy-module.voidfissure.de/surge) 
-
-- [Egern 模块](https://proxy-module.voidfissure.de/egern)
-
-- [Loon 插件](https://proxy-module.voidfissure.de/loon)
-
-
-**如果你安装了 [Script-Hub 模块](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%AE%89%E8%A3%85)，则可以点击下方链接一键导入**   
-- [Shadowrocket 模块](https://api.boxjs.app/shadowrocket/install?module=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dshadowrocket-module%26del%3Dtrue%26jqEnabled%3Dtrue)  
+- [Shadowrocket 模块](https://api.boxjs.app/shadowrocket/install?module=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FMing900907%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dshadowrocket-module%26del%3Dtrue%26jqEnabled%3Dtrue)
   
-- [Stash 覆写](https://api.boxjs.app/stash/install-override?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.stoverride%3Ftype%3Dsurge-module%26target%3Dstash-stoverride%26del%3Dtrue%26jqEnabled%3Dtrue)  
+- [Stash 覆写](https://api.boxjs.app/stash/install-override?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FMing900907%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.stoverride%3Ftype%3Dsurge-module%26target%3Dstash-stoverride%26del%3Dtrue%26jqEnabled%3Dtrue)
   
-- [Surge 模块](https://api.boxjs.app/surge/install-module?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue&name=)  
+- [Surge 模块](https://api.boxjs.app/surge/install-module?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FMing900907%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue&name=)
 
-- [Loon 插件](https://www.nsloon.com/openloon/import?plugin=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.plugin%3Ftype%3Dsurge-module%26target%3Dloon-plugin%26del%3Dtrue%26jqEnabled%3Dtrue)   
+- [Loon 插件](https://www.nsloon.com/openloon/import?plugin=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FMing900907%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.plugin%3Ftype%3Dsurge-module%26target%3Dloon-plugin%26del%3Dtrue%26jqEnabled%3Dtrue)
     
 
 
@@ -81,8 +67,17 @@
 - 启用上述配置  
 
 资源下载
-- **首次进入游戏会提示下载约26Mb资源文件则说明汉化成功**  
+- **首次进入游戏会提示下载额外资源文件则说明汉化成功**
 - **导入模块后汉化会随本项目自动更新，无需任何手动操作**
+
+## 维护与发布
+将现有日语槽位的中文包迁移到英语槽位：
+
+```bash
+python3 tools/migrate_to_english.py localize_jp.zip manifest.json
+```
+
+把生成的 `dist/localize_en.zip` 和 `dist/manifest.json` 上传到同一个 Release。脚本只迁移清单中真实存在的英语文件；没有英语对应项的文件会跳过并计数。
 
 ## 最后
 - 如果你觉得本项目对你有帮助，请帮忙点个 Star，这是对我最好的支持！

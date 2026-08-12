@@ -12,6 +12,6 @@ http:
 
   url-rewrite:
     - >-
-      ^https?://.*localize_jp.zip$ https://github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest/download/localize_jp.zip 302
+      ^https?://.*localize_en.zip$ https://github.com/Ming900907/LimbusCompany-IOS-Localization/releases/latest/download/localize_en.zip 302
     - >-
-      ^https://downloadcommon\.limbuscompanycdn\.org/.*LocalizePatchInfo\.json$ https://github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest/download/manifest.json 302
+      ^https://downloadcommon\.limbuscompanycdn\.org/.*LocalizePatchInfo\.json$ https://github.com/Ming900907/LimbusCompany-IOS-Localization/releases/latest/download/manifest.json 302
